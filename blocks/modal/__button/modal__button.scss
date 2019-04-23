@@ -1,0 +1,15 @@
+.modal__button{
+  color: #fff;
+  background-color: rgb(10, 154, 85);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 0.4em;
+  margin: 0px 5px;
+  font-weight: bold;
+  min-width: 70px;
+}
+
+.modal__button:hover {
+  cursor: pointer;
+  background-color: rgb(8, 125, 69);
+}

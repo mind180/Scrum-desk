@@ -1,0 +1,11 @@
+.sticker__menu-next{
+
+  cursor: pointer;
+  padding: 3px;
+  border-radius: 4px;
+
+  &:hover{
+    font-weight: bold;
+    background-color: rgb(181, 181, 181);
+  }
+}

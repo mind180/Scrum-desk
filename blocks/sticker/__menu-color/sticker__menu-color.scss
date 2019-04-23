@@ -1,0 +1,13 @@
+.sticker__menu-color{
+  background-color: rgb(2, 162, 152);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0);
+
+  &:hover{
+    border: 1px solid rgba(255, 255, 255, 1);
+  }
+
+}

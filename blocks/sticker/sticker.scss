@@ -1,0 +1,20 @@
+.sticker {
+  display: grid;
+  grid-template-rows: 7fr 1fr;
+  grid-template-columns: 6fr 1fr;
+
+  background-color: rgb(2, 162, 152);
+  color: #eee;
+
+  height: 150px;
+  width: 200px;
+
+  box-sizing: border-box;
+
+  margin: 10px;
+  padding: 5px;
+
+  border-radius: 4px;
+  border-bottom-right-radius: 5px;
+
+}

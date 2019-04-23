@@ -1,0 +1,54 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #cecece;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+
+@import "./l-board/l-board";
+
+@import "./header/header.scss";
+@import "./header/__menu/header__menu.scss";
+@import "./header/__menu-item/header__menu-item.scss";
+@import "./header/_item/header_item_active.scss";
+@import "./header/__context-menu/header__context-menu.scss";
+@import "./header/__context-item/header__context-item.scss";
+
+
+@import "./board/board.scss";
+@import "./board/__header/board__header";
+@import "./board/__header-close/board__header-close";
+@import "./board/__l-stickers/board__l-stickers";
+
+@import "./sticker/sticker";
+@import "./sticker/__add-item/sticker__add-item";
+@import "./sticker/__record/sticker__record";
+@import "./sticker/__input/sticker__input";
+@import "./sticker/__author/sticker__author";
+
+@import "./sticker/__menu/sticker__menu";
+@import "./sticker/__menu-close/sticker__menu-close";
+@import "./sticker/__menu-next/sticker__menu-next";
+@import "./sticker/__menu-prev/sticker__menu-prev";
+@import "./sticker/__menu-color/sticker__menu-color";
+
+@import "./sticker/__color-picker/sticker__color-picker";
+@import "./sticker/_color/sticker_color_orange";
+@import "./sticker/_color/sticker_color_aqua";
+@import "./sticker/_color/sticker_color_violet";
+@import "./sticker/_color/sticker_color_yellow";
+
+@import "./modal/__background/modal__background";
+@import "./modal/__window/modal__window";
+@import "./modal/__window-header/modal__window-header";
+@import "./modal/__window-body/modal__window-body";
+@import "./modal/__window-footer/modal__window-footer";
+@import "./modal/__button/modal__button";
+@import "./modal/__input/modal__input";
+@import "./modal/__input-label/modal__input-label";
+
+
+/* lib */
+@import "./lib/is-open.scss";

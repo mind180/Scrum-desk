@@ -1,0 +1,21 @@
+.board__header-close {
+
+  position: absolute;
+  top: 0;
+  right: 0px;
+
+  width: 26px;
+  height: 26px;
+
+  font-size: 20px;
+
+  transition: background-color 0.1s linear;
+}
+
+.board__header-close:hover {
+
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #cecece;
+
+}

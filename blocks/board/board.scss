@@ -1,0 +1,16 @@
+.board{
+
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+
+  padding: 10px;
+
+  margin: 10px;
+
+  background-color: grey;
+
+  width: 440px;
+  min-height: 90vh;
+}

@@ -1,0 +1,25 @@
+.sticker__menu{
+  position: relative;
+
+  color: white;
+  background-color:  rgb(217, 217, 217);
+  opacity: 0.1;
+  transition: opacity 0.3s linear;
+
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  border-radius: 15px;;
+
+  &:hover{
+      background-color: rgb(161, 159, 159);
+      opacity: 0.8;
+  }
+}

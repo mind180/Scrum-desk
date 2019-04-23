@@ -1,0 +1,15 @@
+блок:
+	section
+	елемент: 
+		заголовок
+		
+блок:
+	l-grid
+	c-sticker-block
+		element:
+		sticker-block_stick
+
+			modificator:
+				stick-color_green
+				section_active
+	
