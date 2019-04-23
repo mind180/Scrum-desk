@@ -9,6 +9,8 @@ import {desktopControllers} from './desktopControllers.js';
 export function Page(){
 
   var body = document.querySelector('body');
+      body.addEventListener('renderDesktop', renderDesktop);
+
   var desktopController;
   var desktopLayout;
 
@@ -19,8 +21,6 @@ export function Page(){
     var header = new Header().getHTMLElement();
     header.addEventListener('click', tabClick);
     header.addEventListener('click', contextTabAdd);
-
-
 
     var boardsLayout = desktopLayout = document.createElement('div');
     boardsLayout.classList.add('desktop');
@@ -67,7 +67,7 @@ export function Page(){
     if( btn.value !== 'Ok'  ) return;
 
     let caption = modal.getResponse();
-    desktopController.addBoard( new Board({caption: caption}) );
+    desktopController.addBoard( new Board({caption: caption, index: desktopController.getSize() }) );
     renderDesktop();
 
     body.removeEventListener('click', addTab);

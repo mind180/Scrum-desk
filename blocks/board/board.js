@@ -81,6 +81,7 @@ export function Board({caption:_caption='', index:_index=0})
   }
 
   function removeSticker(e){
+
     var closeElem = e.target;
     if( !closeElem.classList.contains('sticker__menu-close') ) return;
 
@@ -91,7 +92,17 @@ export function Board({caption:_caption='', index:_index=0})
     renderStickers();
   }
 
+  function deleteSticker(sticker)
+  {
+    stickers.splice( stickers.indexOf(sticker), 1);
+    renderStickers();
+  }
+
   //-----------public-----------------
   this.getHTMLElement = getHTMLElement;
   this.addSticker = addSticker;
+  this.deleteSticker = deleteSticker;
+  this.getIndex = function(){
+    return index;
+  }
 }
