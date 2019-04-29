@@ -34,11 +34,12 @@ body{
 @import "./sticker/__menu-prev/sticker__menu-prev";
 @import "./sticker/__menu-color/sticker__menu-color";
 
-@import "./sticker/__color-picker/sticker__color-picker";
 @import "./sticker/_color/sticker_color_orange";
 @import "./sticker/_color/sticker_color_aqua";
 @import "./sticker/_color/sticker_color_violet";
 @import "./sticker/_color/sticker_color_yellow";
+
+@import "./sticker/__color-picker/sticker__color-picker";
 
 @import "./modal/__background/modal__background";
 @import "./modal/__window/modal__window";

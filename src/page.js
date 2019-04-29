@@ -43,7 +43,6 @@ export function Page(){
     var tab = e.target;
     if( !tab.classList.contains('header__menu-item') ) return;
     var controllerName = tab.innerText + 'Controller';
-
     desktopController = desktopControllers[controllerName].getController();
 
     renderDesktop();

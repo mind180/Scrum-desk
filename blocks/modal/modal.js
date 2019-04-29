@@ -22,8 +22,14 @@ export function Modal(){
     modal.classList.add('modal__background');
     modal.addEventListener('click', removeModal);
 
+
+
       var wnd = document.createElement('div');
       wnd.classList.add('modal__window');
+      setTimeout(function(){
+        wnd.style.marginTop = '150px';
+          wnd.style.width = '400px';
+      },0);
 
         var header = document.createElement('div');
         header.classList.add('modal__window-header');

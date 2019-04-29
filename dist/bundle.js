@@ -118,7 +118,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Header__menu\", function() { return Header__menu; });\nfunction Header__menu(_ref) {\n  var _ref$username = _ref.username,\n      _username = _ref$username === void 0 ? 'Unknown User' : _ref$username;\n\n  var elem;\n  var username = _username;\n\n  function getHTMLElement() {\n    if (!elem) render();\n    return elem;\n  }\n\n  function render() {\n    var ul = document.createElement('ul');\n    ul.classList.add('header__menu');\n    ul.innerHTML = '<li class=\"header__menu-item header_item_active\"><i class=\"fas fa-user\"></i>' + username + '</li>' + '<li class=\"header__menu-item\"><i class=\"fas fa-project-diagram\"></i>Projects</li>' + '<li class=\"header__menu-item\"><i class=\"fas fa-th-large\"></i>Boards</li>' + '<li class=\"header__menu-item\"><i class=\"fas fa-chart-line\"></i>Reports</li>';\n    elem = ul;\n  }\n\n  this.getHTMLElement = getHTMLElement;\n}\n\n//# sourceURL=webpack:///./blocks/header/__menu/header__menu.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Header__menu\", function() { return Header__menu; });\nfunction Header__menu(_ref) {\n  var _ref$username = _ref.username,\n      _username = _ref$username === void 0 ? 'Unknown User' : _ref$username;\n\n  var elem;\n  var username = _username;\n\n  function getHTMLElement() {\n    if (!elem) render();\n    return elem;\n  }\n\n  function render() {\n    var ul = document.createElement('ul');\n    ul.classList.add('header__menu');\n    ul.innerHTML = '<li class=\"header__menu-item header_item_active\"><i class=\"fas fa-user\"></i>User</li>' + '<li class=\"header__menu-item\"><i class=\"fas fa-project-diagram\"></i>Projects</li>' + '<li class=\"header__menu-item\"><i class=\"fas fa-th-large\"></i>Boards</li>' + '<li class=\"header__menu-item\"><i class=\"fas fa-chart-line\"></i>Reports</li>';\n    elem = ul;\n  }\n\n  this.getHTMLElement = getHTMLElement;\n}\n\n//# sourceURL=webpack:///./blocks/header/__menu/header__menu.js?");
 
 /***/ }),
 
@@ -134,6 +134,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 /***/ }),
 
+/***/ "./blocks/imports.scss":
+/*!*****************************!*\
+  !*** ./blocks/imports.scss ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./blocks/imports.scss?");
+
+/***/ }),
+
 /***/ "./blocks/modal/modal.js":
 /*!*******************************!*\
   !*** ./blocks/modal/modal.js ***!
@@ -142,7 +153,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Modal\", function() { return Modal; });\nfunction Modal() {\n  var elem;\n  var response = \"\";\n\n  function getHTMLElement() {\n    if (!elem) render();\n    return elem;\n  }\n\n  function render() {}\n\n  function forTabTitle() {\n    var modal = document.createElement('div');\n    modal.classList.add('modal__background');\n    modal.addEventListener('click', removeModal);\n    var wnd = document.createElement('div');\n    wnd.classList.add('modal__window');\n    var header = document.createElement('div');\n    header.classList.add('modal__window-header');\n    header.innerHTML = \"Enter tab name\";\n    var body = document.createElement('div');\n    body.classList.add('modal__window-body');\n    var input = document.createElement('input');\n    input.classList.add('modal__input');\n    body.appendChild(input);\n    var footer = document.createElement('div');\n    footer.classList.add('modal__window-footer');\n    var btn1 = document.createElement('input');\n    btn1.classList.add('modal__button');\n    btn1.setAttribute('type', 'button');\n    btn1.setAttribute('value', 'Cancel');\n\n    btn1.onclick = function () {\n      var body = document.querySelector('body');\n      body.removeChild(document.querySelector('.modal__background'));\n    };\n\n    var btn2 = document.createElement('input');\n    btn2.classList.add('modal__button');\n    btn2.setAttribute('type', 'button');\n    btn2.setAttribute('value', 'Ok');\n\n    btn2.onclick = function () {\n      response = document.querySelector('.modal__input').value;\n      var body = document.querySelector('body');\n      body.removeChild(document.querySelector('.modal__background'));\n    };\n\n    footer.appendChild(btn1);\n    footer.appendChild(btn2);\n    wnd.appendChild(header);\n    wnd.appendChild(body);\n    wnd.appendChild(footer);\n    modal.appendChild(wnd);\n    return modal;\n  }\n\n  function removeModal(e) {\n    if (!e.target.classList.contains('modal__background')) return;\n    var body = document.querySelector('body');\n    body.removeChild(e.target);\n  }\n\n  function getResponse() {\n    return response;\n  } //public\n  //this.getHTMLElement = getHTMLElement;\n\n\n  this.getResponse = getResponse;\n  this.forTabTitle = forTabTitle;\n}\n\n//# sourceURL=webpack:///./blocks/modal/modal.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Modal\", function() { return Modal; });\nfunction Modal() {\n  var elem;\n  var response = \"\";\n\n  function getHTMLElement() {\n    if (!elem) render();\n    return elem;\n  }\n\n  function render() {}\n\n  function forTabTitle() {\n    var modal = document.createElement('div');\n    modal.classList.add('modal__background');\n    modal.addEventListener('click', removeModal);\n    var wnd = document.createElement('div');\n    wnd.classList.add('modal__window');\n    setTimeout(function () {\n      wnd.style.marginTop = '150px';\n      wnd.style.width = '400px';\n    }, 0);\n    var header = document.createElement('div');\n    header.classList.add('modal__window-header');\n    header.innerHTML = \"Enter tab name\";\n    var body = document.createElement('div');\n    body.classList.add('modal__window-body');\n    var input = document.createElement('input');\n    input.classList.add('modal__input');\n    body.appendChild(input);\n    var footer = document.createElement('div');\n    footer.classList.add('modal__window-footer');\n    var btn1 = document.createElement('input');\n    btn1.classList.add('modal__button');\n    btn1.setAttribute('type', 'button');\n    btn1.setAttribute('value', 'Cancel');\n\n    btn1.onclick = function () {\n      var body = document.querySelector('body');\n      body.removeChild(document.querySelector('.modal__background'));\n    };\n\n    var btn2 = document.createElement('input');\n    btn2.classList.add('modal__button');\n    btn2.setAttribute('type', 'button');\n    btn2.setAttribute('value', 'Ok');\n\n    btn2.onclick = function () {\n      response = document.querySelector('.modal__input').value;\n      var body = document.querySelector('body');\n      body.removeChild(document.querySelector('.modal__background'));\n    };\n\n    footer.appendChild(btn1);\n    footer.appendChild(btn2);\n    wnd.appendChild(header);\n    wnd.appendChild(body);\n    wnd.appendChild(footer);\n    modal.appendChild(wnd);\n    return modal;\n  }\n\n  function removeModal(e) {\n    if (!e.target.classList.contains('modal__background')) return;\n    var body = document.querySelector('body');\n    body.removeChild(e.target);\n  }\n\n  function getResponse() {\n    return response;\n  } //public\n  //this.getHTMLElement = getHTMLElement;\n\n\n  this.getResponse = getResponse;\n  this.forTabTitle = forTabTitle;\n}\n\n//# sourceURL=webpack:///./blocks/modal/modal.js?");
 
 /***/ }),
 
@@ -194,17 +205,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 /***/ }),
 
-/***/ "./blocks/style.scss":
-/*!***************************!*\
-  !*** ./blocks/style.scss ***!
-  \***************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./blocks/style.scss?");
-
-/***/ }),
-
 /***/ "./main.js":
 /*!*****************!*\
   !*** ./main.js ***!
@@ -213,7 +213,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./bloc
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _src_page_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./src/page.js */ \"./src/page.js\");\n/* harmony import */ var _blocks_sticker_sticker_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./blocks/sticker/sticker.js */ \"./blocks/sticker/sticker.js\");\n/* harmony import */ var _blocks_board_board_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./blocks/board/board.js */ \"./blocks/board/board.js\");\n/* harmony import */ var _blocks_style_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./blocks/style.scss */ \"./blocks/style.scss\");\n/* harmony import */ var _blocks_style_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_blocks_style_scss__WEBPACK_IMPORTED_MODULE_3__);\n\n\n\n\nvar page = new _src_page_js__WEBPACK_IMPORTED_MODULE_0__[\"Page\"]();\npage.render();\n\n//# sourceURL=webpack:///./main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _src_page_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./src/page.js */ \"./src/page.js\");\n/* harmony import */ var _blocks_sticker_sticker_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./blocks/sticker/sticker.js */ \"./blocks/sticker/sticker.js\");\n/* harmony import */ var _blocks_board_board_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./blocks/board/board.js */ \"./blocks/board/board.js\");\n/* harmony import */ var _blocks_imports_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./blocks/imports.scss */ \"./blocks/imports.scss\");\n/* harmony import */ var _blocks_imports_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_blocks_imports_scss__WEBPACK_IMPORTED_MODULE_3__);\n\n\n\n\nvar page = new _src_page_js__WEBPACK_IMPORTED_MODULE_0__[\"Page\"]();\npage.render();\n\n//# sourceURL=webpack:///./main.js?");
 
 /***/ }),
 
@@ -225,7 +225,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _src
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"desktopControllers\", function() { return desktopControllers; });\n/* harmony import */ var _blocks_board_boardsController_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../blocks/board/boardsController.js */ \"./blocks/board/boardsController.js\");\n/* harmony import */ var _projectsController_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./projectsController.js */ \"./src/projectsController.js\");\n\n\nvar desktopControllers = {\n  BoardsController: {\n    getController: function getController() {\n      return new _blocks_board_boardsController_js__WEBPACK_IMPORTED_MODULE_0__[\"BoardsController\"]();\n    }\n  },\n  ProjectsController: {\n    getController: function getController() {\n      return new _projectsController_js__WEBPACK_IMPORTED_MODULE_1__[\"ProjectsController\"]();\n    }\n  },\n  ReportsController: {\n    getController: function getController() {\n      return {};\n    }\n  }\n};\n\n//# sourceURL=webpack:///./src/desktopControllers.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"desktopControllers\", function() { return desktopControllers; });\n/* harmony import */ var _blocks_board_boardsController_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../blocks/board/boardsController.js */ \"./blocks/board/boardsController.js\");\n/* harmony import */ var _projectsController_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./projectsController.js */ \"./src/projectsController.js\");\n/* harmony import */ var _userController_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./userController.js */ \"./src/userController.js\");\n/* harmony import */ var _reportsController_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./reportsController.js */ \"./src/reportsController.js\");\n\n\n\n\nvar desktopControllers = {\n  BoardsController: {\n    getController: function getController() {\n      return new _blocks_board_boardsController_js__WEBPACK_IMPORTED_MODULE_0__[\"BoardsController\"]();\n    }\n  },\n  ProjectsController: {\n    getController: function getController() {\n      return new _projectsController_js__WEBPACK_IMPORTED_MODULE_1__[\"ProjectsController\"]();\n    }\n  },\n  ReportsController: {\n    getController: function getController() {\n      return new _reportsController_js__WEBPACK_IMPORTED_MODULE_3__[\"ReportsController\"]();\n    }\n  },\n  UserController: {\n    getController: function getController() {\n      return new _userController_js__WEBPACK_IMPORTED_MODULE_2__[\"UserController\"]();\n    }\n  }\n};\n\n//# sourceURL=webpack:///./src/desktopControllers.js?");
 
 /***/ }),
 
@@ -250,6 +250,30 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"ProjectsController\", function() { return ProjectsController; });\nfunction ProjectsController() {\n  var elem;\n\n  function getHTMLElement() {\n    alert('TAB In progress');\n    if (!elem) render();\n    return elem;\n  }\n\n  function render() {\n    var div = document.createElement('div');\n    elem = div;\n  } //public\n\n\n  this.getHTMLElement = getHTMLElement;\n}\n\n//# sourceURL=webpack:///./src/projectsController.js?");
+
+/***/ }),
+
+/***/ "./src/reportsController.js":
+/*!**********************************!*\
+  !*** ./src/reportsController.js ***!
+  \**********************************/
+/*! exports provided: ReportsController */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"ReportsController\", function() { return ReportsController; });\nfunction ReportsController() {\n  var elem;\n\n  function getHTMLElement() {\n    alert('TAB In progress');\n    if (!elem) render();\n    return elem;\n  }\n\n  function render() {\n    var div = document.createElement('div');\n    elem = div;\n  } //public\n\n\n  this.getHTMLElement = getHTMLElement;\n}\n\n//# sourceURL=webpack:///./src/reportsController.js?");
+
+/***/ }),
+
+/***/ "./src/userController.js":
+/*!*******************************!*\
+  !*** ./src/userController.js ***!
+  \*******************************/
+/*! exports provided: UserController */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"UserController\", function() { return UserController; });\nfunction UserController() {\n  var elem;\n\n  function getHTMLElement() {\n    alert('TAB In progress');\n    if (!elem) render();\n    return elem;\n  }\n\n  function render() {\n    var div = document.createElement('div');\n    elem = div;\n  } //public\n\n\n  this.getHTMLElement = getHTMLElement;\n}\n\n//# sourceURL=webpack:///./src/userController.js?");
 
 /***/ })
 

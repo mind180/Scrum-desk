@@ -1,5 +1,7 @@
 import {BoardsController} from '../blocks/board/boardsController.js';
 import {ProjectsController} from './projectsController.js';
+import {UserController} from './userController.js';
+import {ReportsController} from './reportsController.js';
 
 export var desktopControllers = {
 
@@ -17,8 +19,15 @@ export var desktopControllers = {
 
   ReportsController: {
     getController(){
-      return {};
+      return new ReportsController();
+    }
+  },
+
+  UserController: {
+    getController(){
+      return new UserController();
     }
   }
+
 
 }

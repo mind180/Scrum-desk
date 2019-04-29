@@ -1,0 +1,42 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #cecece;
+}
+
+@import './blocks/sticker/__color-picker/sticker__color-picker.scss';
+@import './blocks/sticker/__add-item/sticker__add-item.scss';
+@import './blocks/sticker/__input/sticker__input.scss';
+@import './blocks/sticker/sticker.scss';
+@import './blocks/sticker/__menu/sticker__menu.scss';
+@import './blocks/sticker/__menu-close/sticker__menu-close.scss';
+@import './blocks/sticker/__menu-color/sticker__menu-color.scss';
+@import './blocks/sticker/__menu-prev/sticker__menu-prev.scss';
+@import './blocks/sticker/__menu-next/sticker__menu-next.scss';
+@import './blocks/sticker/__author/sticker__author.scss';
+@import './blocks/sticker/__record/sticker__record.scss';
+@import './blocks/board/__header/board__header.scss';
+@import './blocks/board/board.scss';
+@import './blocks/board/__header-close/board__header-close.scss';
+@import './blocks/board/__l-stickers/board__l-stickers.scss';
+@import './blocks/l-board/l-board.scss';
+@import './blocks/modal/__button/modal__button.scss';
+@import './blocks/modal/__input/modal__input.scss';
+@import './blocks/modal/__background/modal__background.scss';
+@import './blocks/modal/__window/modal__window.scss';
+@import './blocks/modal/__window-body/modal__window-body.scss';
+@import './blocks/modal/__window-footer/modal__window-footer.scss';
+@import './blocks/modal/__input-label/modal__input-label.scss';
+@import './blocks/modal/__window-header/modal__window-header.scss';
+@import './blocks/header/_item/header_item_active.scss';
+@import './blocks/header/__menu-item/header__menu-item.scss';
+@import './blocks/header/header.scss';
+@import './blocks/header/__context-menu/header__context-menu.scss';
+@import './blocks/header/__menu/header__menu.scss';
+@import './blocks/header/__context-item/header__context-item.scss';
+@import './blocks/lib/is-open.scss';
+
+@import './blocks/sticker/_color/sticker_color_yellow.scss';
+@import './blocks/sticker/_color/sticker_color_violet.scss';
+@import './blocks/sticker/_color/sticker_color_orange.scss';
+@import './blocks/sticker/_color/sticker_color_aqua.scss';
